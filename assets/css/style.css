@@ -430,6 +430,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+#intro .intro-info p {
+  color: #fff;
+  /* margin-bottom: 40px; */
+  font-size: 24px;
+}
+
 #intro .intro-info h2 span {
   color: #74b5fc;
   text-decoration: underline;
@@ -439,6 +445,9 @@ h1, h2, h3, h4, h5, h6 {
   #intro .intro-info h2 {
     font-size: 34px;
     margin-bottom: 30px;
+  }
+  #intro .intro-info p {
+    font-size: 20px;
   }
 }
 
@@ -604,7 +613,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 #services {
   padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
 }
 
 #services .box {
@@ -661,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 #team {
   background: #fff;
   padding: 60px 0;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
 }
 
 #team .member {
