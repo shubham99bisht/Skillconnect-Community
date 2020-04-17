@@ -44,9 +44,9 @@
           <li><a href="./upcoming">Upcoming Events</a></li>
           <li class="drop-down"><a href="">More</a>
             <ul>
-              <li><a href="#team">Beginners</a></li>
-              <li><a href="#services">Intermediate</a></li>
-              <li><a href="#team2">Advanced</a></li>
+              <li><a href="#services" onclick="show('basic')">Beginners</a></li>
+              <li><a href="#services"  onclick="show('intermediate')">Intermediate</a></li>
+              <li><a href="#services" onclick="show('advanced')">Advanced</a></li>
             </ul>
           </li>
         </ul>
@@ -64,7 +64,7 @@
       <div class="intro-info">
         <!-- <h2>We provide<br><span>solutions</span><br>for your business!</h2> -->
         <h2>Past Challenges</h2>
-        <p class="problem">Week 1: Python Warm up Challenge.</p>
+        <p class="problem">Choose the level of problems based upon your skillset.</p>
         <div class="row">
           <div col="md-4"><a href="#services" onclick="show('basic')" class="btn-get-started scrollto" target="_blank" id="ps_basic">Problem Statements - Beginners</a></div>
           <div col="md-4"><a href="#services" onclick="show('intermediate')" class="btn-services scrollto" target="_blank" id="ps_intermediate">Problem Statements - Intermediate</a></div>
@@ -86,22 +86,21 @@
                 <div class="col-md-12 wow bounceInUp" data-wow-duration="1.4s">
                   <div class="box">
                     <div class="icon"><i class="ion-social-youtube-outline" style="color: #ff689b;"></i></div>
-                    <h5 class="title" style="display:none"><a href="#services">some text here</a></h5>
-                    <h3 style="margin-left:40px;">Week 1: Python Warm-up Challenge</h3>
+                    <h5 class="title"><a href="#services">Week 1: Python Warm-up Challenge</a></h5>
+                    <h3 style="margin-left:40px;">Learn Basic Python Syntax and Concepts</h3>
                     <p class="description">1. Python Print function, String and Variables 2. Operations and Built-in functions 3. Lists, Sets, Tuples, Dictionaries 4. Lists Operations and Strings manipulation 5. Defining functions 6. Importing Modules</p>
-                    <div class="row" style="margin-top:15px;margin-left:40px;">
-                      <!-- <div class="col">hi</div> -->
-                      <div class="col">
-                        <a href="https://github.com/SkillConnect/Community_Challenges/blob/master/Week_1" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <div class="row" style="margin-top:15px;">
+                      <div class="col" style="margin-left:50px;">
+                        <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/Week_1_Basic.pdf" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </div>
                       <div class="col">
-                        <a href="#" target="_blank" class="btn btn-outline-success">Best Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" class="btn btn-outline-success" style="margin-left:-10px;">Best Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </div>
                       <div class="col">
-                        <a href="#" target="_blank" class="btn btn-outline-info" >All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/" target="_blank" class="btn btn-outline-info"  style="margin-left:-60px;">All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </div>
                       <div class="col">
-                        <a href="#" target="_blank" class="btn btn-outline-warning">Author's Solutions  <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" class="btn btn-outline-warning"  style="margin-left:-120px;">Author's Solution   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </div>
                     </div>
                   </div>
@@ -119,15 +118,17 @@
                   <p class="description">1.Define functions and using in built functions like map, split, lambda etc.<br>2. Perform basic operations using Numpy arrays, Pandas, Matplotlib<br>3. Performing Image manipulation, Video Rendering, Live Camera Feed using OpenCV.</p>
                   <div class="row" style="margin-top:15px;">
                     <div class="col" style="margin-left:50px;">
-                      <a href="https://github.com/SkillConnect/Community_Challenges/blob/master/Week_1/Week_1_Intermediate.pdf" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                      <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/Week_1_Intermediate.pdf" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                     <div class="col">
                       <a href="#" target="_blank" class="btn btn-outline-success" style="margin-left:-10px;">Best Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                     <div class="col">
-                      <a href="https://github.com/SkillConnect/Community_Challenges/tree/master/Week_1" target="_blank" class="btn btn-outline-info"  style="margin-left:-60px;">All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                      <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/" target="_blank" class="btn btn-outline-info"  style="margin-left:-60px;">All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col">
+                      <a href="#" target="_blank" class="btn btn-outline-warning"  style="margin-left:-120px;">Author's Solution   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -145,16 +146,16 @@
                   <p class="description">Training multiple classifiers on same dataset and displaying results and comparison of models using UI based on Flask server.</p>
                   <div class="row" style="margin-top:15px;">
                     <div class="col" style="margin-left:50px;">
-                      <a href="https://github.com/SkillConnect/Community_Challenges/blob/master/Week_1/Week_1_Advanced.pdf" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                      <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/Week_1_Advanced.pdf" target="_blank" class="btn btn-outline-danger">Problem Statements   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                     <div class="col">
                       <a href="#" target="_blank" class="btn btn-outline-success" style="margin-left:-10px;">Best Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                     <div class="col">
-                      <a href="https://github.com/SkillConnect/Community_Challenges/tree/master/Week_1" target="_blank" class="btn btn-outline-info"  style="margin-left:-60px;">All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                      <a href="https://github.com/shubham99bisht/ML-Problem-Statements/blob/master/Week_1/" target="_blank" class="btn btn-outline-info"  style="margin-left:-60px;">All Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                     <div class="col">
-                      <a href="https://github.com/shubham99bisht/Intrusion-Detection-using-ML" target="_blank" class="btn btn-outline-warning"  style="margin-left:-120px;">Sample Submission   <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                      <a href="#" target="_blank" class="btn btn-outline-warning"  style="margin-left:-120px;">Author's Solution   <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -191,9 +192,6 @@
               <div class="col-lg-3 col-md-6 footer-contact">
                 <h4>Contact Us</h4>
                 <p>
-                  KRESIT Blg, IIT Powai,<br>
-                  Mumbai, 400072<br>
-                  India <br>
                   <strong>Phone:</strong> +91 7620222198<br>
                   <strong>Email:</strong> shubham99bisht@gmail.com<br>
                 </p>
